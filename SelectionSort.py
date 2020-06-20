@@ -1,27 +1,26 @@
-
-
-
-
-
-def selectionSort(lista):
-    for x in range(len(lista)):
+def selectionSort(unsortedList):
+    for x in range(len(unsortedList)):
         foundSmaller = False
-        smallestElement = lista[x]
+        smallestElement = unsortedList[x]
         smallestElementIndex = x
-        for y in range(x+1,len(lista)):
-            if lista[y] < smallestElement:
-                smallestElement = lista[y]
+        for y in range(x+1,len(unsortedList)):
+            if unsortedList[y] < smallestElement:
+                smallestElement = unsortedList[y]
                 smallestElementIndex = y
                 foundSmaller = True
         if foundSmaller:
-            lista[smallestElementIndex], lista[x] = lista[x], lista[smallestElementIndex]
-    return lista
-
-
+            unsortedList[smallestElementIndex], unsortedList[x] = unsortedList[x], unsortedList[smallestElementIndex]
+    return unsortedList
 
 def main():
-    print(selectionSort([1,2,7,4,5,2,6,2,31,64,1,52,86,52,43]))
-
+    while(True):
+        userInput = input("Write integers!").split()
+        try:
+            [int(x) for x in userInput]
+            print(selectionSort(userInput))
+            break
+        except ValueError as val:
+            print(val)
 
 if __name__ == '__main__':
     main()
