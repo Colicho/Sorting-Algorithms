@@ -1,11 +1,12 @@
 import React from "react"
 import bubbleSort from "../sortAlgos/bubblesort"
+import selectionSort from "../sortAlgos/quicksort"
 
 
 function Main(props){
     return(
         <div className="main">
-            {bubbleSort([1, 5, 5, 7, 5])}
+            {selectionSort([1, 5, 1, 5, 7, 5])}
         </div>
     )
 }

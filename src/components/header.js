@@ -4,16 +4,21 @@ function Header(){
     return(
         <div className="header">
             <div className="sortAlgos">
-                Sorting Algorithms
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
             <div className="amount">
-                Size
+                sort 2
             </div>
             <div className="speed">
-                Speed  
+                sort 3 
             </div>
             <div className="start">
-                playbutton             
+                More options, size, speed          
             </div>
             
         </div>
