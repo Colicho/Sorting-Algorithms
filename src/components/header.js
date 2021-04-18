@@ -1,21 +1,22 @@
 import React from "react"
+import bubbleSort from "../sortAlgos/bubblesort"
 
-function Header(){
+function Header(props){
     return(
         <div className="header">
             <div className="sortAlgos">
-                <button class="dropbtn">Dropdown</button>
+                <button class="dropbtn">{props.sort}</button>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <div onClick={() => props.sor('Bubble sort')}>Bubble sort</div>
+                    <div onClick={() => props.sor('Selection sort')}>Selection sort</div>
+                    <div onClick={() => props.sor('Insertion sort')}>Insertion sort</div>
                 </div>
             </div>
             <div className="amount">
-                sort 2
+                Size
             </div>
             <div className="speed">
-                sort 3 
+                speed
             </div>
             <div className="start">
                 More options, size, speed          

@@ -4,12 +4,15 @@ import selectionSort from "../sortAlgos/quicksort"
 
 
 function Main(props){
+    let value = props.sort
+    if (typeof(props.sort) !== 'string'){
+        value = props.sort([1, 5, 1, 5, 7, 62])
+    }
     return(
         <div className="main">
-            {selectionSort([1, 5, 1, 5, 7, 5])}
+            {value}
         </div>
     )
 }
-
 
 export default Main
