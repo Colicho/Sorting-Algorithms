@@ -70,4 +70,25 @@ body{
   min-height: 85vh;
   text-align:center;
   grid-row: 2;
+  display: grid;
+  grid-template-rows: 66% 34%;
+}
+
+.test {
+  grid-row: 2;
+}
+
+#bars {
+  display: grid;
+  grid-template-columns: repeat(1,10px);
+  justify-content: center;
+}
+
+hr {
+  width:50%;
+  margin:0 auto;
+  border: 5px solid #3E5372;
+  border-radius: 8px;
+  background-color: #3E5372;
+
 }

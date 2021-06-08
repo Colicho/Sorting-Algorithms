@@ -1,29 +1,32 @@
 import React from "react"
-import bubbleSort from "../sortAlgos/bubblesort"
 
 function Header(props){
     return(
         <div className="header">
             <div className="sortAlgos">
-                <button class="dropbtn">{props.sort}</button>
+                <div class="dropbtn">{props.sortText}</div>
                 <div class="dropdown-content">
-                    <div onClick={() => props.sor('Bubble sort')}>Bubble sort</div>
-                    <div onClick={() => props.sor('Selection sort')}>Selection sort</div>
-                    <div onClick={() => props.sor('Insertion sort')}>Insertion sort</div>
+                    <div onClick={() => props.sort('Bubble sort')}>Bubble sort</div>
+                    <div onClick={() => props.sort('Selection sort')}>Selection sort</div>
+                    <div onClick={() => props.sort('Insertion sort')}>Insertion sort</div>
                 </div>
             </div>
-            <div className="amount">
+            <div className="amount" onInput={() => props.size()}>
                 Size
+                <input type="range" id="sizeSlider" min="1" max="100"></input>
             </div>
-            <div className="speed">
-                speed
+            <div className="speed" onInput={() => props.speed()}>
+                Speed
+                <input type="range" id="speedSlider" min="1" max="100"></input>
             </div>
             <div className="start">
-                More options, size, speed          
+                More options, size, speed
             </div>
             
         </div>
     )
+
 }
+
 
 export default Header

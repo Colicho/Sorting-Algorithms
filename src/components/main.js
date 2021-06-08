@@ -1,18 +1,21 @@
 import React from "react"
-import bubbleSort from "../sortAlgos/bubblesort"
-import selectionSort from "../sortAlgos/quicksort"
-
 
 function Main(props){
-    let value = props.sort
-    if (typeof(props.sort) !== 'string'){
-        value = props.sort([1, 5, 1, 5, 7, 62])
+    let value = props.listData
+    for(let i=0;i<value.length;i++){
+
     }
     return(
         <div className="main">
-            {value}
+            <div className="test">
+                <div id="bars">
+                    {value}
+                </div>
+                <hr className="bar"></hr>
+            </div>
         </div>
     )
 }
+
 
 export default Main
