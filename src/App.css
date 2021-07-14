@@ -80,13 +80,14 @@ body{
 
 .test {
   grid-row: 2;
-
 }
 
 #bars {
-  display: grid;
-  grid-template-columns: repeat(1,10px);
+  display: flex;
   justify-content: center;
+  position: relative;
+  width:50%;
+  margin:0 auto;
 }
 
 hr {
@@ -95,5 +96,4 @@ hr {
   border: 5px solid #3E5372;
   border-radius: 8px;
   background-color: #3E5372;
-
 }

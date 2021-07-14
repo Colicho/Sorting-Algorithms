@@ -52,14 +52,24 @@ class App extends React.Component{
   size(){
       let j = document.getElementById("sizeSlider").value
       let list = []
+      const myNode = document.getElementById("bars");
+      while (myNode.firstChild) {
+          myNode.removeChild(myNode.firstChild);
+      }
       for(let i = 0; i < j; i++){
-          list.push(Math.floor(Math.random() * 100) + 1)
+          let value = Math.floor(Math.random() * 100) + 1
+          list.push(value)
+          let square = document.createElement('d');
+          square.setAttribute("id", i);
+          document.getElementById('bars').appendChild(square)
+          document.getElementById(i).style.backgroundColor = 'black'
+          document.getElementById(i).style.height = value*2 + "px"
+          document.getElementById(i).style.paddingRight = 10 + "px"
       }
       this.setState({
           listData: list,
           size: j
       });
-      document.getElementById('bars').innerHTML = list
   }
 
   speed(){
@@ -74,8 +84,6 @@ class App extends React.Component{
           this.state.listData = this.state.currentSort(this.state.listData, 101-this.state.speed)
       }
       document.getElementById('bars').innerHTML = this.state.listData
-      let square = document.createElement('d');
-      document.getElementById('bars').appendChild(square)
   }
 
   render(){
