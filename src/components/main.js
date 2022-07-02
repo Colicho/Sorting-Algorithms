@@ -4,10 +4,13 @@ function Main(props){
     let value = props.listData
     return(
         <div className="main">
-            <div className="test">
-                <div id="bars">
+            <div className="container">
+                <div id="sort">
+
                 </div>
-                <hr className="bar"></hr>
+                <div id={"sort2"}>
+
+                </div>
             </div>
         </div>
     )

@@ -2,11 +2,9 @@ import React from "react"
 import './App.css';
 import Main from "./components/main"
 import Header from "./components/header"
-import selectionSort from "./sortAlgos/selectionsort"
-import bubbleSort from "./sortAlgos/bubblesort"
-import insertionSort from "./sortAlgos/insertionsort"
-import quickSort from "./sortAlgos/quicksort"
-import mergeSort from "./sortAlgos/mergesort"
+import bubbleSort from "./sortalgos/bubblesort"
+import insertionSort from "./sortalgos/insertionsort"
+import mergeSort from "./sortalgos/mergesort"
 
 class App extends React.Component{
   constructor(){
@@ -30,14 +28,8 @@ class App extends React.Component{
           case 'Bubble sort':
               value = bubbleSort
               break
-          case 'Selection sort':
-              value = selectionSort
-              break
           case 'Insertion sort':
               value = insertionSort
-              break
-          case 'Quick sort':
-              value = quickSort
               break
           case 'Merge sort':
               value = mergeSort
@@ -52,19 +44,17 @@ class App extends React.Component{
   size(){
       let j = document.getElementById("sizeSlider").value
       let list = []
-      const myNode = document.getElementById("bars");
-      while (myNode.firstChild) {
-          myNode.removeChild(myNode.firstChild);
-      }
+      document.getElementById('sort').innerHTML = null
       for(let i = 0; i < j; i++){
-          let value = Math.floor(Math.random() * 100) + 1
+          let value = Math.floor(Math.random() * 200) + 1
           list.push(value)
           let square = document.createElement('d');
           square.setAttribute("id", i);
-          document.getElementById('bars').appendChild(square)
+          document.getElementById('sort').appendChild(square)
           document.getElementById(i).style.backgroundColor = 'black'
           document.getElementById(i).style.height = value*2 + "px"
           document.getElementById(i).style.paddingRight = 10 + "px"
+          document.getElementById(i).style.marginTop = -20 + "px"
       }
       this.setState({
           listData: list,
@@ -74,8 +64,9 @@ class App extends React.Component{
 
   speed(){
       let i = document.getElementById("speedSlider").value
+
       this.setState({
-          speed: i,
+          speed: i
       })
   }
 
@@ -83,7 +74,6 @@ class App extends React.Component{
       if (typeof(this.state.currentSort) !== 'string'){
           this.state.listData = this.state.currentSort(this.state.listData, 101-this.state.speed)
       }
-      document.getElementById('bars').innerHTML = this.state.listData
   }
 
   render(){

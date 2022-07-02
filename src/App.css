@@ -75,25 +75,32 @@ body{
   min-height: 85vh;
   grid-row: 2;
   display: grid;
-  grid-template-rows: 66% 34%;
+  grid-template-rows: 20% 60% 20%;
 }
 
-.test {
+.container {
   grid-row: 2;
+  position: relative;
+  display: grid;
+  grid-template-rows: 99% 1%;
 }
-
-#bars {
+#sort {
+  grid-row: 1;
   display: flex;
   justify-content: center;
-  position: relative;
   width:50%;
   margin:0 auto;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  padding-top: 20px;
 }
 
-hr {
-  width:50%;
+#sort2 {
+  grid-row: 2;
+  width:70%;
   margin:0 auto;
   border: 5px solid #3E5372;
   border-radius: 8px;
   background-color: #3E5372;
 }
+
