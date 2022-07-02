@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Sorting-Algorithms/static/css/main.e734297e.chunk.css",
-    "main.js": "/Sorting-Algorithms/static/js/main.f37f063a.chunk.js",
-    "main.js.map": "/Sorting-Algorithms/static/js/main.f37f063a.chunk.js.map",
-    "runtime-main.js": "/Sorting-Algorithms/static/js/runtime-main.4c575189.js",
-    "runtime-main.js.map": "/Sorting-Algorithms/static/js/runtime-main.4c575189.js.map",
-    "static/js/2.2c27a6d6.chunk.js": "/Sorting-Algorithms/static/js/2.2c27a6d6.chunk.js",
-    "static/js/2.2c27a6d6.chunk.js.map": "/Sorting-Algorithms/static/js/2.2c27a6d6.chunk.js.map",
-    "static/js/3.765be490.chunk.js": "/Sorting-Algorithms/static/js/3.765be490.chunk.js",
-    "static/js/3.765be490.chunk.js.map": "/Sorting-Algorithms/static/js/3.765be490.chunk.js.map",
+    "main.css": "/Sorting-Algorithms/static/css/main.9d95c12f.chunk.css",
+    "main.js": "/Sorting-Algorithms/static/js/main.815df340.chunk.js",
+    "main.js.map": "/Sorting-Algorithms/static/js/main.815df340.chunk.js.map",
+    "runtime-main.js": "/Sorting-Algorithms/static/js/runtime-main.a4c7929d.js",
+    "runtime-main.js.map": "/Sorting-Algorithms/static/js/runtime-main.a4c7929d.js.map",
+    "static/js/2.762fe0f2.chunk.js": "/Sorting-Algorithms/static/js/2.762fe0f2.chunk.js",
+    "static/js/2.762fe0f2.chunk.js.map": "/Sorting-Algorithms/static/js/2.762fe0f2.chunk.js.map",
+    "static/js/3.530624fd.chunk.js": "/Sorting-Algorithms/static/js/3.530624fd.chunk.js",
+    "static/js/3.530624fd.chunk.js.map": "/Sorting-Algorithms/static/js/3.530624fd.chunk.js.map",
     "index.html": "/Sorting-Algorithms/index.html",
-    "static/css/main.e734297e.chunk.css.map": "/Sorting-Algorithms/static/css/main.e734297e.chunk.css.map",
-    "static/js/2.2c27a6d6.chunk.js.LICENSE.txt": "/Sorting-Algorithms/static/js/2.2c27a6d6.chunk.js.LICENSE.txt"
+    "static/css/main.9d95c12f.chunk.css.map": "/Sorting-Algorithms/static/css/main.9d95c12f.chunk.css.map",
+    "static/js/2.762fe0f2.chunk.js.LICENSE.txt": "/Sorting-Algorithms/static/js/2.762fe0f2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4c575189.js",
-    "static/js/2.2c27a6d6.chunk.js",
-    "static/css/main.e734297e.chunk.css",
-    "static/js/main.f37f063a.chunk.js"
+    "static/js/runtime-main.a4c7929d.js",
+    "static/js/2.762fe0f2.chunk.js",
+    "static/css/main.9d95c12f.chunk.css",
+    "static/js/main.815df340.chunk.js"
   ]
 }
