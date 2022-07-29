@@ -1,5 +1,5 @@
 
-function bubbleSort(array, speed){
+function bubbleSort(array, speed, size){
     let n = array.length
     const sleep = (milliseconds) => {
         return new Promise(resolve => setTimeout(resolve, milliseconds))
@@ -26,7 +26,7 @@ function bubbleSort(array, speed){
                         document.getElementById(l).style.backgroundColor = 'black'
                     }
                     document.getElementById(l).style.height = value*2 + "px"
-                    document.getElementById(l).style.paddingRight = 10 + "px"
+                    document.getElementById(l).style.paddingRight = 1.2 + "%"
                     document.getElementById(l).style.marginTop = -20 + "px"
                 }
             }

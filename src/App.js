@@ -14,7 +14,7 @@ class App extends React.Component{
         currentSort: "Choose a sorting algorithm!",
         size: 50,
         speed: 50,
-        listData: [33],
+        listData: [33, 44, 55, 66],
       }
       this.chooseSort = this.chooseSort.bind(this)
       this.size = this.size.bind(this)
@@ -53,7 +53,7 @@ class App extends React.Component{
           document.getElementById('sort').appendChild(square)
           document.getElementById(i).style.backgroundColor = 'black'
           document.getElementById(i).style.height = value*2 + "px"
-          document.getElementById(i).style.paddingRight = 10 + "px"
+          document.getElementById(i).style.paddingRight = 1.2 + "%"
           document.getElementById(i).style.marginTop = -20 + "px"
       }
       this.setState({
@@ -72,7 +72,7 @@ class App extends React.Component{
 
   start(){
       if (typeof(this.state.currentSort) !== 'string'){
-          this.state.listData = this.state.currentSort(this.state.listData, 101-this.state.speed)
+          this.state.listData = this.state.currentSort(this.state.listData, 101-this.state.speed, this.state.size)
       }
   }
 
